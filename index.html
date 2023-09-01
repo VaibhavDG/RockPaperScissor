@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scoreBox">
+      <ul style="list-style-type: none" id="header">
+        <li>ROCK</li>
+        <li>PAPER</li>
+        <li>SCISSORS</li>
+      </ul>
+      <div class="scores">
+        <div class="Score">
+          <ul style="list-style-type: none">
+            <li>Computer</li>
+            <li>Score</li>
+          </ul>
+          <span id="num1">0</span>
+        </div>
+        <div class="Score">
+          <ul style="list-style-type: none">
+            <li>Your</li>
+            <li>Score</li>
+          </ul>
+          <span id="num2">0</span>
+        </div>
+      </div>
+    </div>
+    <div id="playArea">
+      <img src="images/EllipsePurplepng.png" alt="purpleCircle" id="elP" />
+      <img src="images/Ellipse 2.png" alt="blueCircle" id="elB" />
+      <img src="images/Line 1.png" alt="line" id="l1" />
+      <img src="images/Line 2.png" alt="line" id="l2" />
+      <img src="images/Line 3.png" alt="line" id="l3" />
+      <img src="images/EllipseYellow.png" alt="yellowCircle" id="elY" />
+      <img src="images/Ellipse 1.png" alt="whiteCircle" id="w1" />
+      <img src="images/Ellipse 1.png" alt="whiteCircle" id="w2" />
+      <img src="images/Ellipse 1.png" alt="whiteCircle" id="w3" />
+      <button type="submit" id="fist1" onclick="game('rock')">
+        <img src="images/icons8-fist-67 1.png" alt="fist" />
+      </button>
+      <button type="submit" id="hand1" onclick="game('paper')">
+        <img src="images/icons8-hand-64 1.png" alt="hand" />
+      </button>
+      <button type="submit" id="v" onclick="game('scissors')">
+        <img src="images/17911 1.png" alt="scissor" />
+      </button>
+    </div>
+    <div id="container">
+      <div id="winScreen">
+        <img src="images/Ellipse 4.png" alt="greenCircles" id="elG" />
+        <img src="images/Ellipse 3.png" alt="greCircle1" id="elG1" />
+        <img src="images/Ellipse 5.png" alt="greCircle2" id="elG2" />
+        <img src="images/EllipsePurplepng.png" alt="purpleCircle" id="elP1" />
+
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="w11" />
+        <img src="images/17911 1.png" alt="scissor" id="v1" />
+        <img src="images/icons8-fist-67 1.png" alt="fist" id="fist2" />
+        <img src="images/icons8-hand-64 1.png" alt="hand" id="hand2" />
+        <div id="result">
+          <p class="you">YOU WIN</p>
+          <p class="against">AGAINST PC</p>
+        </div>
+      </div>
+      <div id="winScreen1">
+        <img src="images/Ellipse 4.png" alt="greenCircles" id="elGe" />
+        <img src="images/Ellipse 3.png" alt="greCircle1" id="elG1e" />
+        <img src="images/Ellipse 5.png" alt="greCircle2" id="elG2e" />
+        <img src="images/EllipsePurplepng.png" alt="purpleCircle" id="elP1e" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="w11e" />
+        <img src="images/17911 1.png" alt="scissor" id="v1e" />
+        <img src="images/icons8-fist-67 1.png" alt="fist" id="fist2e" />
+        <img src="images/icons8-hand-64 1.png" alt="hand" id="hand2e" />
+        <div id="result1">
+          <p class="you">YOU LOST</p>
+          <p class="against">AGAINST PC</p>
+        </div>
+      </div>
+      <div id="tieResult">
+        <p class="you">TIE UP</p>
+      </div>
+      <div id="loseScreen">
+        <img src="images/EllipsePurplepng.png" alt="purpleCircle" id="elPpv" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="w1pv" />
+        <img src="images/17911 1.png" alt="scissor" id="vpv" />
+      </div>
+      <div id="loseScreen1">
+        <img src="images/EllipsePurplepng.png" alt="purpleCircle" id="elPpv1" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="w1pv1" />
+        <img src="images/17911 1.png" alt="scissor" id="vpv1" />
+      </div>
+
+      <div id="loseScreen2">
+        <img src="images/EllipseYellow.png" alt="yellowCircle" id="elYls" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="w1pvls" />
+        <img src="images/icons8-hand-64 1.png" alt="hand" id="hls" />
+      </div>
+      <div id="loseScreen3">
+        <img src="images/EllipseYellow.png" alt="yellowCircle" id="elYls1" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="w1pv1ls" />
+        <img src="images/icons8-hand-64 1.png" alt="hand" id="hls1" />
+      </div>
+
+      <div id="loseScreen4">
+        <img src="images/Ellipse 2.png" alt="blueCircle" id="elBls4" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="wls4" />
+        <img src="images/icons8-fist-67 1.png" alt="fist" id="fistls4" />
+      </div>
+      <div id="loseScreen5">
+        <img src="images/Ellipse 2.png" alt="blueCircle" id="elBls5" />
+        <img src="images/Ellipse 1.png" alt="whiteCircle" id="wls5" />
+        <img src="images/icons8-fist-67 1.png" alt="fist" id="fistls5" />
+      </div>
+    </div>
+    <div id="playBtn">
+      <button type="submit" id="playAgain" onclick="repeatPlay();">
+        PLAY AGAIN
+      </button>
+    </div>
+    <img src="images/rules.png" alt="box" id="points" />
+    <div class="rule">
+      <button
+        type="submit"
+        id="rules"
+        onclick="() => document.getElementById('points').style.display = 'block'"
+      >
+        RULES
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

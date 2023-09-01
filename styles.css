@@ -1,0 +1,408 @@
+body {
+    background-color: #8CC461;
+    
+}
+
+.scoreBox {
+    display: flex;
+    width: 60%;
+    padding: 30px 0 ;
+    height: 120px;
+    margin-top: 40px;
+    margin-left: 290px;
+    border: 3px solid #FFFFFF;
+    border-radius: 13px;
+}
+
+.Score {
+    margin-left: 25px;
+    width: 145px;
+    height: 145px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+}
+.scores {
+    display: flex;
+    margin-left: 295px;
+    margin-top: -13px;
+    
+}
+#num1 {
+    
+    padding-left: 55px;
+    
+    font-size: 80px;
+    
+    font-weight: 700;
+}
+#num2 {
+    padding-left: 55px;
+    font-size: 80px;
+    font-weight: 700;
+}
+#header {
+    color: #FFFFFF; 
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 40px;   
+    margin-top: -20px;
+    margin-left: -20px;
+    letter-spacing: 5px;
+}
+#elP {
+    position: relative;
+    margin-left: 780px;
+    margin-top: 80px;
+}
+#elB {
+
+    margin-left: -435px;
+}
+#l1 {
+    position: relative;
+    margin-bottom: 70px;
+    margin-left: -20px;
+}
+#l2 {
+    position: relative;
+    margin-bottom: -68px;
+    margin-left: -40px;
+}
+#l3 {
+    position: relative;
+    margin-left: -200px;
+    margin-bottom: -68px;
+}
+#elY {
+    position: relative;
+    top: 200px;
+    right: 53px;
+}
+#w1 {
+    position: relative;
+    right: 60px;
+    bottom: 28px;
+}    
+#w2 {
+    position: relative;
+    right: 440px;
+    bottom: 28px; ;
+}    
+#w3 {
+    position: relative;
+    top: 172px;
+    right: 422px ;
+}
+#playArea {
+    
+    
+    height: 50%;
+}
+#fist1 {
+    position: relative;
+    right: 660px;
+    bottom: 55px;
+    border: 0;
+    background: transparent;
+}
+#hand1 {
+    position: relative;
+    right: 615px;
+    top: 150px;
+    border: 0;
+    background: transparent;
+}
+#v {
+    position: relative;
+    right: 545px;
+    bottom: 55px;
+    border: 0;
+    background: transparent;
+}
+#elG1 {
+    position: relative;
+    right: 390px;
+    bottom: 88px;
+}
+#elG2 {
+    position: relative;
+    right: 670px;
+    bottom: 110px;
+}
+#elP1 {
+    position: relative;
+    right: 880px;
+    bottom: 150px;
+}
+
+#w11 {
+    position: relative;
+    right: 1020px;
+    bottom: 178px;
+}
+
+#winScreen {
+    display: none;
+    position: absolute;
+    float: left;
+    margin-left: 150px;
+    
+    
+}
+#result {
+    display: none;
+    position: relative;
+    left: 500px;
+    bottom: 400px;
+    
+}
+#result1 {
+    display: none;
+    position: relative;
+    right: 310px;
+    bottom: 800px;
+    
+}
+#tieResult {
+    display: none;
+    position: relative;
+    left: 700px;
+    top: 100px;
+}
+.you {
+    font-family: "roboto";
+    color: #FFFFFF;
+    font-size: 39px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.against {
+    
+    font-family: "roboto";
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    
+}
+
+#winScreen1 {
+    display: none;
+    position: absolute;
+    float: right;
+    left: 60%
+    
+}
+
+#hand2 {
+    display: none;
+    position: relative;
+    bottom: 270px;
+    left: 200px;
+    
+    
+}
+#fist2 {
+    display: none;
+    position: relative;
+    bottom: 270px;
+    left: 200px;
+    
+    
+}
+#v1 {
+    display: none;
+    position: relative;
+    left: 220px;
+    bottom: 265px;
+    
+    
+}
+
+#v1e {
+    visibility: hidden;
+    position: relative;
+    left: -70px;
+    bottom: 685px;
+    
+    
+}
+#hand2e {
+    visibility: hidden;
+    position: relative;
+    bottom: 680px;
+    left: -215px;
+    
+}
+#fist2e {
+    visibility: hidden;
+    position: relative;
+    bottom: 685px;
+    left: -135px;
+    
+}
+#elG1e{
+    position: relative;
+    bottom: 390px;
+    left: 86px;
+    
+}
+#elG2e {
+    position: relative;
+    bottom: 415px;
+    right: 193px;
+}
+#elP1e {
+    position: relative;
+    bottom: 623px;
+    left: 150px;
+}
+#w11e {
+    position: relative;
+    bottom: 652px;
+    left: 10px;
+}
+#w1pv {
+    position: relative;
+    left: -140px;
+    bottom: 30px;
+}
+#vpv {
+    position: relative;
+    left: -215px;
+    bottom: 55px;
+}
+#loseScreen {
+    display: none;
+    float: left;
+    position: relative;
+    left: 300px;
+    top: 140px;
+}
+#loseScreen1 {
+    display: none;
+    float: left;
+    position: relative;
+    left: 1050px;
+    top: 150px;
+}
+#w1pv1 {
+    position: relative;
+    left: -140px;
+    bottom: 28px;
+}
+#vpv1 {
+    position: relative;
+    left: -220px;
+    bottom: 60px;
+}
+
+#w1pvls {
+    position: relative;
+    left: -140px;
+    bottom: 30px;
+}
+#hls {
+    position: relative;
+    left: -235px;
+    bottom: 50px;
+}
+#loseScreen2 {
+    display: none;
+    float: left;
+    position: relative;
+    left: 300px;
+    top: 140px;
+}
+#loseScreen3 {
+    display: none;
+    float: left;
+    position: relative;
+    left: 1050px;
+    top: 150px;
+}
+#w1pv1ls {
+    position: relative;
+    left: -140px;
+    bottom: 28px;
+}
+#hls1 {
+    position: relative;
+    left: -235px;
+    bottom: 50px;
+}
+#wls4 {
+    position: relative;
+    left: -140px;
+    bottom: 30px;
+}
+#fistls4 {
+    position: relative;
+    left: -240px;
+    bottom: 55px;
+}
+#loseScreen4 {
+    display: none;
+    float: left;
+    position: relative;
+    left: 300px;
+    top: 140px;
+}
+#loseScreen5 {
+    display: none;
+    float: left;
+    position: relative;
+    left: 1050px;
+    top: 150px;
+}
+#wls5 {
+    position: relative;
+    left: -140px;
+    bottom: 28px;
+}
+#fistls5 {
+    position: relative;
+    left: -240px;
+    bottom: 60px;
+}
+#playBtn {
+    display: none;
+    position: relative;
+    left: 300px;
+    top: 350px;
+}
+#playAgain {
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 10%;
+    font-size: 22px;
+    color: #6B6B6B;
+    letter-spacing: 2px;
+}
+#container {
+    display: block;
+}
+
+#rules {
+    position: fixed;
+    margin-left: 1300px;
+    font-family: "roboto";
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    display: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 130px;
+    line-height: 49px;
+    font-size: 29px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: 500;
+}
+#points {
+    
+    display: none;
+    margin-left: 1150px;
+    margin-top: 30px;
+}
